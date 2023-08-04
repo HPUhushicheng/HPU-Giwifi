@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "河南理工大学校园网自动登录插件",
+  "version": "1.1",
+  "description": "解放双手",
+  "content_scripts": [
+    {
+      "include": ["*://*/gportal/web/login?*, *://*/srun_portal_success?*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": ["<all_urls>"]
+}
+
+
